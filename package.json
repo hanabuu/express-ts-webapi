@@ -1,0 +1,32 @@
+{
+  "name": "express-ts-webapi",
+  "version": "1.0.0",
+  "description": "express typescript webapi",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanabuu/express-ts-webapi.git"
+  },
+  "keywords": [
+    "express",
+    "typescript"
+  ],
+  "author": "hanabusa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanabuu/express-ts-webapi/issues"
+  },
+  "homepage": "https://github.com/hanabuu/express-ts-webapi#readme",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.0",
+    "@types/sqlite3": "^3.1.8",
+    "express": "^4.18.2",
+    "log4js": "^6.9.1",
+    "sqlite3": "^5.1.6",
+    "typescript": "^5.1.6"
+  }
+}
