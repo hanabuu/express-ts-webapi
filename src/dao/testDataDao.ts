@@ -16,13 +16,12 @@ export class testDataDao{
                 this.db.serialize(() => {
                     this.db.all('SELECT test1, test2 FROM test', (error, rows: testType.test[]) => {
                         if(error) throw Error;
-                        for(let i=0; i<rows.length; i++){
-                            testDatas.push(rows[i]);
-                        }
-                        resolve(testDatas);    
+//                        console.log(rows);
+                        resolve(rows);
                     });
                 });
             } catch(err) {
+                console.log(err);
                 reject(testDatas);
             }
         });

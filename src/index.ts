@@ -49,13 +49,10 @@ app.get("/api/photo/list", function(req, res, next){
     res.json(hello("aa"));
 });
 
-app.get("/api/testData", function(req, res, next){
-    res.json(getTestTable());
-});
-
-const getTestTable = () => {
+app.get("/api/testData", async function(req, res, next){
     const dao: testDao.testDataDao = new testDao.testDataDao(dbc.getConnection());
     dao.getTestData().then(data => {
-        return data;
+        console.log("getTestTable", data);
+        res.json(data);
     });
-}
+});
